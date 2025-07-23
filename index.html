@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brandon Fredericksen</title>
+    <meta
+      name="description"
+      content="Full-Stack Engineer - Brandon Fredericksen"
+    />
+    <link
+      rel="icon"
+      href="https://avatars.githubusercontent.com/u/brandonfredericksen"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { darkMode: "class" };
+    </script>
+  </head>
+  <body
+    class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-500"
+  >
+    <!-- Navbar -->
+    <header
+      class="fixed w-full z-30 bg-white/80 dark:bg-gray-900/80 backdrop-blur border-b border-gray-200 dark:border-gray-800"
+    >
+      <nav
+        class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3"
+      >
+        <a
+          href="#home"
+          class="text-2xl font-bold tracking-tight focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          >Brandon Fredericksen</a
+        >
+        <button
+          id="nav-toggle"
+          class="md:hidden text-2xl focus:outline-none"
+          aria-label="Open navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul id="nav-menu" class="hidden md:flex gap-8 text-lg font-medium">
+          <li>
+            <a
+              href="#about"
+              class="hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="#experience"
+              class="hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a
+              href="#achievements"
+              class="hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              >Achievements</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Mobile nav -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800"
+      >
+        <ul class="flex flex-col gap-4 p-4 text-lg font-medium">
+          <li><a href="#about" class="block py-2">About</a></li>
+          <li><a href="#skills" class="block py-2">Skills</a></li>
+          <li><a href="#experience" class="block py-2">Experience</a></li>
+          <li><a href="#achievements" class="block py-2">Achievements</a></li>
+          <li><a href="#contact" class="block py-2">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section
+      id="home"
+      class="pt-32 pb-16 px-4 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12"
+    >
+      <div class="flex-1 animate-fade-in-up">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+          Brandon Fredericksen
+        </h1>
+        <p class="text-xl md:text-2xl mb-6 text-gray-700 dark:text-gray-300">
+          Senior Full-Stack Developer located in the Pacific Northwest.
+        </p>
+        <div class="flex gap-4 mb-4">
+          <a
+            href="mailto:brandonfredericksen@gmail.com"
+            class="text-indigo-600 hover:underline"
+            aria-label="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/brandonfredericksen"
+            target="_blank"
+            rel="noopener"
+            class="text-indigo-600 hover:underline"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/brandonfredericksen"
+            target="_blank"
+            rel="noopener"
+            class="text-indigo-600 hover:underline"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <a
+          href="#contact"
+          class="inline-block px-6 py-2 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700 transition focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          >Contact Me</a
+        >
+      </div>
+      <div class="flex-1 flex justify-center animate-fade-in">
+        <img
+          src="https://avatars.githubusercontent.com/u/brandonfredericksen?v=4"
+          alt="Brandon Fredericksen avatar"
+          class="rounded-full w-48 h-48 shadow-lg border-4 border-indigo-600 object-cover"
+        />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 px-4 max-w-4xl mx-auto animate-fade-in-up">
+      <h2 class="text-3xl font-bold mb-6">About</h2>
+      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+        Highly accomplished Backend Engineer with nearly 2 decades of experience
+        in full-stack development, specializing in Node.js, TypeScript, and
+        cloud-native architectures. Proven track record of building scalable
+        backend systems, implementing microservices, and optimizing performance
+        for high-traffic applications. Recently implemented asynchronous event
+        handling using RabbitMQ, resulting in a 30% reduction in operational
+        overhead and improved system reliability.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section
+      id="skills"
+      class="py-16 px-4 max-w-4xl mx-auto animate-fade-in-up"
+    >
+      <h2 class="text-3xl font-bold mb-6">Technical Skills</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Backend</h3>
+          <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
+            <li>
+              Node.js, TypeScript, JavaScript, Express.js, GraphQL, REST APIs,
+              Microservices
+            </li>
+          </ul>
+          <h3 class="text-xl font-semibold mt-4 mb-2">Databases</h3>
+          <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
+            <li>
+              MongoDB, PostgreSQL, MySQL, Redis, Database Design & Optimization
+            </li>
+          </ul>
+          <h3 class="text-xl font-semibold mt-4 mb-2">Cloud</h3>
+          <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
+            <li>
+              AWS (Lambda, EC2, RDS, S3, ElastiCache), Google Cloud Platform
+              (GCP)
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Frontend</h3>
+          <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
+            <li>React, Vue.js, Next.js, HTML5, CSS/SASS, Tailwind CSS</li>
+          </ul>
+          <h3 class="text-xl font-semibold mt-4 mb-2">DevOps & Tools</h3>
+          <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
+            <li>
+              Docker, Git, CI/CD, Serverless Architecture, Performance Tuning
+            </li>
+          </ul>
+          <h3 class="text-xl font-semibold mt-4 mb-2">Methodologies</h3>
+          <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
+            <li>
+              Agile, SCRUM, Test-Driven Development, Code Review, Mentoring
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section
+      id="experience"
+      class="py-16 px-4 max-w-4xl mx-auto animate-fade-in-up"
+    >
+      <h2 class="text-3xl font-bold mb-8">Professional Experience</h2>
+      <div class="space-y-10">
+        <!-- Ka'chava -->
+        <div>
+          <h3 class="text-2xl font-semibold">
+            Senior Software Engineer
+            <span class="text-indigo-600">@ Ka'chava</span>
+          </h3>
+          <div class="text-gray-500 text-sm mb-2">
+            Las Vegas, NV (Remote) | Oct 2023 - Present
+          </div>
+          <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300 space-y-1">
+            <li>
+              Architected and developed full-stack e-commerce platform using
+              TypeScript, React, and Node.js, delivering high-performance web
+              applications that handle thousands of daily transactions with
+              99.9% uptime
+            </li>
+            <li>
+              Implemented Shopify Hydrogen API integration with custom Node.js
+              backend services, optimizing storefront performance and reducing
+              page load times by 40% through efficient data caching and API
+              optimization
+            </li>
+            <li>
+              Built scalable GraphQL APIs using Node.js and TypeScript to manage
+              complex data relationships between products, customers, and
+              orders, improving data retrieval efficiency by 35% and enabling
+              real-time inventory updates
+            </li>
+            <li>
+              Deployed serverless AWS Lambda functions with Node.js runtime to
+              handle backend processes including payment processing, inventory
+              management, and customer notifications, reducing infrastructure
+              costs by 25% while improving scalability
+            </li>
+            <li>
+              Optimized application performance through implementation of Redis
+              caching, database query optimization, and CDN integration,
+              achieving 95+ PageSpeed scores and increasing conversion rates by
+              15%
+            </li>
+            <li>
+              Implemented technical SEO best practices enhancing metadata,
+              structured data, and crawlability leading to a significant
+              increase in organic search visibility and traffic
+            </li>
+          </ul>
+        </div>
+        <!-- Palmetto Solar -->
+        <div>
+          <h3 class="text-2xl font-semibold">
+            Software Engineer
+            <span class="text-indigo-600">@ Palmetto Solar</span>
+          </h3>
+          <div class="text-gray-500 text-sm mb-2">
+            Charleston, SC (Remote) | Feb 2020 - Sep 2023
+          </div>
+          <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300 space-y-1">
+            <li>
+              Developed cross-platform applications using TypeScript, Node.js,
+              React, and Express.js with MongoDB and PostgreSQL databases,
+              serving over 10,000 active users daily with 99.8% system
+              availability
+            </li>
+            <li>
+              Built internal CLI tool and web application using Node.js and
+              TypeScript for automated test data generation and support
+              processes, reducing support ticket volume by 40% and improving
+              team productivity by 30%
+            </li>
+            <li>
+              Implemented asynchronous event handling system using RabbitMQ with
+              Node.js workers to process solar installation workflows, reducing
+              operational overhead by 30% and improving system response times by
+              50%
+            </li>
+            <li>
+              Established CI/CD pipelines using Docker containers deployed on
+              Google Cloud Platform, achieving 100% unit test coverage with Jest
+              and enabling seamless continuous delivery with zero-downtime
+              deployments
+            </li>
+            <li>
+              Mentored junior developers on Node.js best practices, TypeScript
+              implementation, and modern JavaScript patterns, contributing to
+              peer code reviews and improving overall team code quality by 25%
+            </li>
+          </ul>
+        </div>
+        <!-- UMG Gaming -->
+        <div>
+          <h3 class="text-2xl font-semibold">
+            Lead Software Engineer
+            <span class="text-indigo-600">@ UMG Gaming</span>
+          </h3>
+          <div class="text-gray-500 text-sm mb-2">
+            Seattle, WA | Sep 2015 - Feb 2020
+          </div>
+          <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300 space-y-1">
+            <li>
+              Led full modernization of platform infrastructure, migrating
+              legacy systems to Node.js and MySQL, improving performance by 60%
+              and reducing server response times from 2s to 300ms
+            </li>
+            <li>
+              Designed and implemented a custom e-commerce API with integrated
+              subscription management, processing $2M+ in annual transactions
+              and optimizing for SEO
+            </li>
+            <li>
+              Directed frontend migration from jQuery to Vue.js and established
+              API-driven architecture, improving page load speed and user
+              engagement — key metrics for organic search ranking
+            </li>
+            <li>
+              Spearheaded cloud migration to AWS (EC2, RDS, S3, ElastiCache),
+              reducing hosting costs by 40% while improving reliability and
+              search engine crawlability
+            </li>
+            <li>
+              Formalized engineering processes for a high-performing development
+              team: introduced agile rituals, defined coding standards,
+              implemented PR reviews, and enforced test coverage
+            </li>
+            <li>
+              Conducted regular 1:1s, delivered performance reviews, and created
+              personalized growth plans to support career development, resulting
+              in improved retention and team satisfaction
+            </li>
+            <li>
+              Mentored junior and mid-level engineers, fostering a collaborative
+              engineering culture grounded in continuous feedback and technical
+              excellence
+            </li>
+          </ul>
+        </div>
+        <!-- Phinney Bischoff -->
+        <div>
+          <h3 class="text-2xl font-semibold">
+            Senior Software Engineer
+            <span class="text-indigo-600">@ Phinney Bischoff</span>
+          </h3>
+          <div class="text-gray-500 text-sm mb-2">
+            Seattle, WA | Jan 2014 - Dec 2015
+          </div>
+          <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300 space-y-1">
+            <li>
+              Delivered enterprise applications for Fortune 500 clients
+              including University of Washington and BECU using Node.js,
+              Express.js, and JavaScript, managing projects from conception to
+              production deployment
+            </li>
+            <li>
+              Developed scalable web applications using Node.js backend with
+              Vue.js and Angular frontends, MySQL databases, and RESTful API
+              architecture, serving 100,000+ users across multiple client
+              platforms
+            </li>
+            <li>
+              Implemented robust database solutions using MySQL and PostgreSQL
+              with Node.js ORM integration, optimizing query performance and
+              reducing database response times by 50% for high-traffic
+              applications
+            </li>
+            <li>
+              Built responsive client portals using JavaScript, Node.js APIs,
+              and modern CSS frameworks, improving client engagement metrics by
+              35% and reducing support requests by 20%
+            </li>
+          </ul>
+        </div>
+        <!-- Carr Knowledge Inc. -->
+        <div>
+          <h3 class="text-2xl font-semibold">
+            Software Engineer
+            <span class="text-indigo-600">@ Carr Knowledge Inc.</span>
+          </h3>
+          <div class="text-gray-500 text-sm mb-2">
+            Seattle, WA | Jan 2008 - Dec 2014
+          </div>
+          <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300 space-y-1">
+            <li>
+              Specialized in e-commerce platform development for major brands
+              including Nike and Subway using JavaScript and MVC-based backend
+              frameworks, processing millions of dollars in annual online
+              transactions
+            </li>
+            <li>
+              Architected database-driven applications with efficient data
+              models and API endpoints, supporting 50,000 daily active users and
+              enabling real-time content updates
+            </li>
+            <li>
+              Developed mobile-responsive web applications with JavaScript and
+              modern frontend practices, achieving 98% mobile compatibility
+              scores and improving user retention by 40%
+            </li>
+            <li>
+              Implemented secure payment processing systems with PCI-compliant
+              integration, handling 10,000+ transactions monthly with 99.9%
+              success rate
+            </li>
+          </ul>
+        </div>
+        <!-- Zipline Interactive -->
+        <div>
+          <h3 class="text-2xl font-semibold">
+            Full Stack Developer
+            <span class="text-indigo-600">@ Zipline Interactive</span>
+          </h3>
+          <div class="text-gray-500 text-sm mb-2">
+            Spokane, WA | Jan 2007 - Mar 2008
+          </div>
+          <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300 space-y-1">
+            <li>
+              Built interactive web applications using JavaScript and MVC
+              backend frameworks, with a strong focus on user experience
+              optimization and cross-browser compatibility
+            </li>
+            <li>
+              Developed database-driven solutions and content management systems
+              that improved client workflow efficiency
+            </li>
+            <li>
+              Implemented responsive design and modern CSS practices, ensuring
+              optimal performance across desktop and mobile platforms with 95+
+              accessibility scores
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section
+      id="achievements"
+      class="py-16 px-4 max-w-4xl mx-auto animate-fade-in-up"
+    >
+      <h2 class="text-3xl font-bold mb-6">Key Achievements</h2>
+      <ul
+        class="list-disc ml-6 text-lg text-gray-700 dark:text-gray-300 space-y-2"
+      >
+        <li>
+          <strong>Performance Optimization:</strong> Achieved 30% reduction in
+          operational overhead through implementation of asynchronous event
+          handling and microservices architecture
+        </li>
+        <li>
+          <strong>Scalability Leadership:</strong> Successfully migrated
+          high-traffic applications to cloud infrastructure, supporting 10x user
+          growth while maintaining 99.9% uptime
+        </li>
+        <li>
+          <strong>Team Development:</strong> Mentored 15+ junior developers over
+          the course of my career on modern JavaScript and engineering
+          practices, contributing to improved code quality and team productivity
+        </li>
+        <li>
+          <strong>Technology Innovation:</strong> Early adopter of Node.js and
+          TypeScript, leading multiple successful migrations from legacy systems
+          to modern JavaScript architectures
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="py-16 px-4 max-w-4xl mx-auto animate-fade-in-up"
+    >
+      <h2 class="text-3xl font-bold mb-6">Contact</h2>
+      <form
+        action="mailto:brandonfredericksen@gmail.com"
+        method="POST"
+        enctype="text/plain"
+        class="space-y-4 max-w-lg"
+      >
+        <div>
+          <label for="name" class="block text-lg font-medium mb-1">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          />
+        </div>
+        <div>
+          <label for="email" class="block text-lg font-medium mb-1"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          />
+        </div>
+        <div>
+          <label for="message" class="block text-lg font-medium mb-1"
+            >Message</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="px-6 py-2 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700 transition focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        >
+          Send
+        </button>
+      </form>
+      <div class="mt-8 text-gray-600 dark:text-gray-400">
+        Or email me directly:
+        <a
+          href="mailto:brandonfredericksen@gmail.com"
+          class="text-indigo-600 hover:underline"
+          >brandonfredericksen@gmail.com</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-500 dark:text-gray-400 text-sm">
+      &copy; 2025 Brandon Fredericksen. Built with
+      <a href="https://tailwindcss.com/" class="text-indigo-600 hover:underline"
+        >Tailwind CSS</a
+      >.
+    </footer>
+
+    <!-- Animations and Mobile Nav JS -->
+    <script>
+      // Fade-in animation
+      document.querySelectorAll(".animate-fade-in-up").forEach((el, i) => {
+        el.style.opacity = 0;
+        el.style.transform = "translateY(40px)";
+        setTimeout(() => {
+          el.style.transition =
+            "opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1)";
+          el.style.opacity = 1;
+          el.style.transform = "translateY(0)";
+        }, 200 + i * 150);
+      });
+      document.querySelectorAll(".animate-fade-in").forEach((el, i) => {
+        el.style.opacity = 0;
+        setTimeout(() => {
+          el.style.transition = "opacity 1s cubic-bezier(.4,0,.2,1)";
+          el.style.opacity = 1;
+        }, 400 + i * 200);
+      });
+
+      // Mobile nav
+      const navToggle = document.getElementById("nav-toggle");
+      const navMenu = document.getElementById("mobile-menu");
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("hidden");
+      });
+      navMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => navMenu.classList.add("hidden"));
+      });
+
+      // Smooth scroll for anchor links (for Safari)
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
