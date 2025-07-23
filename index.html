@@ -9,10 +9,6 @@
       content="Backend Engineer Portfolio - Brandon Fredericksen"
     />
     <link
-      rel="icon"
-      href="https://avatars.githubusercontent.com/u/brandonfredericksen"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
@@ -39,37 +35,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .section-title {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        font-weight: 700;
-        font-size: 1.875rem;
-      }
-      .section-title-bar {
-        height: 2px;
-        width: 40px;
-        background: #6366f1;
-        border-radius: 2px;
-        display: inline-block;
-      }
-      body {
-        background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
-      }
-      @media (prefers-color-scheme: dark) {
-        body {
-          background: linear-gradient(120deg, #18181b 0%, #312e81 100%);
-        }
-      }
-    </style>
   </head>
   <body
-    class="font-sans text-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-500"
+    class="font-sans text-gray-100 bg-[#000719] min-h-screen transition-colors duration-500
+         bg-[url('images/bg.jpg')] bg-no-repeat bg-left-top bg-fixed [background-size:auto_100vh]"
   >
-    <div
-      class="w-full max-w-6xl mx-auto flex flex-col lg:flex-row min-h-screen"
-    >
+    <div class="w-full max-w-6xl mx-auto flex flex-col lg:flex-row min-h-screen">
       <!-- Sidebar (vertically centered with main content, no fixed/absolute) -->
       <aside
         class="w-full lg:w-[320px] xl:w-[380px] flex flex-col justify-between items-center px-8 py-4 bg-transparent z-20 lg:sticky lg:top-0 lg:h-screen"
@@ -83,7 +54,7 @@
             class="rounded-full w-32 h-32 mb-6 shadow-lg border-4 border-accent object-cover"
           /> -->
           <h1
-            class="text-4xl font-extrabold mb-2 text-gray-900 dark:text-white text-center"
+            class="text-4xl font-extrabold mb-2 text-white text-center"
           >
             Brandon Fredericksen
           </h1>
@@ -94,7 +65,7 @@
         <div class="flex flex-row gap-4 items-center mb-2">
           <a
             href="mailto:brandonfredericksen@gmail.com"
-            class="text-accent hover:bg-accent hover:text-white rounded-full p-3 border-2 border-accent transition"
+            class="text-accent hover:bg-accent hover:text-[#000719] rounded-full p-3 border-2 border-accent transition"
             aria-label="Email"
             ><i class="fas fa-envelope"></i
           ></a>
@@ -102,7 +73,7 @@
             href="https://www.linkedin.com/in/brandonfredericksen"
             target="_blank"
             rel="noopener"
-            class="text-accent hover:bg-accent hover:text-white rounded-full p-3 border-2 border-accent transition"
+            class="text-accent hover:bg-accent hover:text-[#000719] rounded-full p-3 border-2 border-accent transition"
             aria-label="LinkedIn"
             ><i class="fab fa-linkedin"></i
           ></a>
@@ -110,7 +81,7 @@
             href="https://github.com/brandonfredericksen"
             target="_blank"
             rel="noopener"
-            class="text-accent hover:bg-accent hover:text-white rounded-full p-3 border-2 border-accent transition"
+            class="text-accent hover:bg-accent hover:text-[#000719] rounded-full p-3 border-2 border-accent transition"
             aria-label="GitHub"
             ><i class="fab fa-github"></i
           ></a>
@@ -122,10 +93,11 @@
       >
         <!-- About -->
         <section id="about" class="mb-24 animate-fade-in-up">
-          <div class="section-title mb-8">
-            <span class="section-title-bar"></span> About
+          <div class="section-title mb-8 flex items-center gap-3 font-bold text-3xl">
+            <span class="inline-block h-0.5 w-10 rounded bg-accent"></span>
+            <span class="text-white">About</span>
           </div>
-          <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+          <p class="text-lg leading-relaxed text-gray-200">
             Highly accomplished Backend Engineer with nearly 2 decades of
             experience in full-stack development, specializing in Node.js,
             TypeScript, and cloud-native architectures. Proven track record of
@@ -138,13 +110,14 @@
         </section>
         <!-- Skills -->
         <section id="skills" class="mb-24 animate-fade-in-up">
-          <div class="section-title mb-8">
-            <span class="section-title-bar"></span> Technical Skills
+          <div class="section-title mb-8 flex items-center gap-3 font-bold text-3xl">
+            <span class="inline-block h-0.5 w-10 rounded bg-accent"></span>
+            <span class="text-white">Technical Skills</span>
           </div>
           <div class="grid md:grid-cols-2 gap-8">
             <div>
               <h3 class="text-lg font-semibold mb-2 text-accent">Backend</h3>
-              <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
+              <ul class="list-disc ml-6 text-gray-300">
                 <li>
                   Node.js, TypeScript, JavaScript, Express.js, GraphQL, REST
                   APIs, Microservices
@@ -153,14 +126,14 @@
               <h3 class="text-lg font-semibold mt-4 mb-2 text-accent">
                 Databases
               </h3>
-              <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
+              <ul class="list-disc ml-6 text-gray-300">
                 <li>
                   MongoDB, PostgreSQL, MySQL, Redis, Database Design &
                   Optimization
                 </li>
               </ul>
               <h3 class="text-lg font-semibold mt-4 mb-2 text-accent">Cloud</h3>
-              <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
+              <ul class="list-disc ml-6 text-gray-300">
                 <li>
                   AWS (Lambda, EC2, RDS, S3, ElastiCache), Google Cloud Platform
                   (GCP)
@@ -169,13 +142,13 @@
             </div>
             <div>
               <h3 class="text-lg font-semibold mb-2 text-accent">Frontend</h3>
-              <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
+              <ul class="list-disc ml-6 text-gray-300">
                 <li>React, Vue.js, Next.js, HTML5, CSS/SASS, Tailwind CSS</li>
               </ul>
               <h3 class="text-lg font-semibold mt-4 mb-2 text-accent">
                 DevOps & Tools
               </h3>
-              <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
+              <ul class="list-disc ml-6 text-gray-300">
                 <li>
                   Docker, Git, CI/CD, Serverless Architecture, Performance
                   Tuning
@@ -184,7 +157,7 @@
               <h3 class="text-lg font-semibold mt-4 mb-2 text-accent">
                 Methodologies
               </h3>
-              <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
+              <ul class="list-disc ml-6 text-gray-300">
                 <li>
                   Agile, SCRUM, Test-Driven Development, Code Review, Mentoring
                 </li>
@@ -194,8 +167,9 @@
         </section>
         <!-- Experience -->
         <section id="experience" class="mb-24 animate-fade-in-up">
-          <div class="section-title mb-8">
-            <span class="section-title-bar"></span> Professional Experience
+          <div class="section-title mb-8 flex items-center gap-3 font-bold text-3xl">
+            <span class="inline-block h-0.5 w-10 rounded bg-accent"></span>
+            <span class="text-white">Professional Experience</span>
           </div>
           <div class="space-y-12">
             <!-- Ka'chava -->
@@ -457,12 +431,11 @@
         </section>
         <!-- Achievements -->
         <section id="achievements" class="mb-24 animate-fade-in-up">
-          <div class="section-title mb-8">
-            <span class="section-title-bar"></span> Key Achievements
+          <div class="section-title mb-8 flex items-center gap-3 font-bold text-3xl">
+            <span class="inline-block h-0.5 w-10 rounded bg-accent"></span>
+            <span class="text-white">Key Achievements</span>
           </div>
-          <ul
-            class="list-disc ml-6 text-lg text-gray-700 dark:text-gray-300 space-y-2"
-          >
+          <ul class="list-disc ml-6 text-lg text-gray-200 space-y-2">
             <li>
               <strong>Performance Optimization:</strong> Achieved 30% reduction
               in operational overhead through implementation of asynchronous
@@ -488,8 +461,9 @@
         </section>
         <!-- Contact -->
         <section id="contact" class="mb-24 animate-fade-in-up">
-          <div class="section-title mb-8">
-            <span class="section-title-bar"></span> Contact
+          <div class="section-title mb-8 flex items-center gap-3 font-bold text-3xl">
+            <span class="inline-block h-0.5 w-10 rounded bg-accent"></span>
+            <span class="text-white">Contact</span>
           </div>
           <form
             action="mailto:brandonfredericksen@gmail.com"
@@ -498,7 +472,7 @@
             class="space-y-4 max-w-lg mx-auto"
           >
             <div>
-              <label for="name" class="block text-lg font-medium mb-1"
+              <label for="name" class="block text-lg font-medium mb-1 text-gray-200"
                 >Name</label
               >
               <input
@@ -506,11 +480,11 @@
                 id="name"
                 name="name"
                 required
-                class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-accent"
+                class="w-full px-4 py-2 rounded border border-gray-700 bg-[#0a1124] text-gray-100 focus:outline-none focus:ring-2 focus:ring-accent"
               />
             </div>
             <div>
-              <label for="email" class="block text-lg font-medium mb-1"
+              <label for="email" class="block text-lg font-medium mb-1 text-gray-200"
                 >Email</label
               >
               <input
@@ -518,11 +492,11 @@
                 id="email"
                 name="email"
                 required
-                class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-accent"
+                class="w-full px-4 py-2 rounded border border-gray-700 bg-[#0a1124] text-gray-100 focus:outline-none focus:ring-2 focus:ring-accent"
               />
             </div>
             <div>
-              <label for="message" class="block text-lg font-medium mb-1"
+              <label for="message" class="block text-lg font-medium mb-1 text-gray-200"
                 >Message</label
               >
               <textarea
@@ -530,17 +504,17 @@
                 name="message"
                 rows="4"
                 required
-                class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-accent"
+                class="w-full px-4 py-2 rounded border border-gray-700 bg-[#0a1124] text-gray-100 focus:outline-none focus:ring-2 focus:ring-accent"
               ></textarea>
             </div>
             <button
               type="submit"
-              class="px-6 py-2 bg-accent text-white rounded shadow hover:bg-indigo-700 transition focus:outline-none focus:ring-2 focus:ring-accent"
+              class="px-6 py-2 bg-accent text-[#000719] rounded shadow hover:bg-indigo-700 transition focus:outline-none focus:ring-2 focus:ring-accent"
             >
               Send
             </button>
           </form>
-          <div class="mt-8 text-gray-600 dark:text-gray-400 text-center">
+          <div class="mt-8 text-gray-400 text-center">
             Or email me directly:
             <a
               href="mailto:brandonfredericksen@gmail.com"
