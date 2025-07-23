@@ -22,7 +22,9 @@
               sans: ["Inter", "ui-sans-serif", "system-ui"],
             },
             colors: {
-              accent: "#6366f1",
+              accent: "rgb(213, 253, 126)",
+              accent2: "rgb(69, 106, 143)",
+              accent3: "rgb(184, 209, 234)",
             },
             animation: {
               "bounce-slow": "bounce 2s infinite",
@@ -35,12 +37,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   </head>
   <body
-    class="font-sans text-gray-100 bg-[#000719] min-h-screen transition-colors duration-500
+    class="font-sans text-gray-100 bg-[#000719] min-h-screen
          bg-[url('images/bg.jpg')] bg-no-repeat bg-left-top bg-fixed [background-size:auto_100vh]"
   >
-    <div class="w-full max-w-6xl mx-auto flex flex-col lg:flex-row min-h-screen">
+    <div class="w-full max-w-6xl mx-auto flex flex-col lg:flex-row min-h-screen transition-colors duration-500">
       <!-- Sidebar (vertically centered with main content, no fixed/absolute) -->
       <aside
         class="w-full lg:w-[320px] xl:w-[380px] flex flex-col justify-between items-center px-8 py-4 bg-transparent z-20 lg:sticky lg:top-0 lg:h-screen"
@@ -65,15 +69,16 @@
         <div class="flex flex-row gap-4 items-center mb-2">
           <a
             href="mailto:brandonfredericksen@gmail.com"
-            class="text-accent hover:bg-accent hover:text-[#000719] rounded-full p-3 border-2 border-accent transition"
+            class="text-accent hover:bg-accent hover:text-[#000719] rounded-full p-2 border border-accent transition opacity-30 hover:opacity-100"
             aria-label="Email"
+            target="_blank"
             ><i class="fas fa-envelope"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/brandonfredericksen"
             target="_blank"
             rel="noopener"
-            class="text-accent hover:bg-accent hover:text-[#000719] rounded-full p-3 border-2 border-accent transition"
+            class="text-accent hover:bg-accent hover:text-[#000719] rounded-full p-2 border border-accent transition opacity-30 hover:opacity-100"
             aria-label="LinkedIn"
             ><i class="fab fa-linkedin"></i
           ></a>
@@ -81,7 +86,7 @@
             href="https://github.com/brandonfredericksen"
             target="_blank"
             rel="noopener"
-            class="text-accent hover:bg-accent hover:text-[#000719] rounded-full p-3 border-2 border-accent transition"
+            class="text-accent hover:bg-accent hover:text-[#000719] rounded-full p-2 border border-accent transition opacity-30 hover:opacity-100"
             aria-label="GitHub"
             ><i class="fab fa-github"></i
           ></a>
@@ -109,19 +114,19 @@
         <!-- Skills -->
         <section id="skills" class="mb-24 animate-fade-in-up">
           <div class="section-title mb-8 flex items-center gap-3 font-bold text-3xl">
-            <span class="inline-block h-0.5 w-10 rounded bg-accent"></span>
+            <span class="inline-block h-0.5 w-10 rounded bg-accent2"></span>
             <span class="text-white">Technical Skills</span>
           </div>
           <div class="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 class="text-lg font-semibold mb-2 text-accent">Backend</h3>
+              <h3 class="text-lg font-semibold mb-2 text-accent3">Backend</h3>
               <ul class="list-disc ml-6 text-gray-300">
                 <li>
                   Node.js, TypeScript, JavaScript, Express.js, GraphQL, REST
                   APIs, Microservices
                 </li>
               </ul>
-              <h3 class="text-lg font-semibold mt-4 mb-2 text-accent">
+              <h3 class="text-lg font-semibold mt-4 mb-2 text-accent3">
                 Databases
               </h3>
               <ul class="list-disc ml-6 text-gray-300">
@@ -130,7 +135,7 @@
                   Optimization
                 </li>
               </ul>
-              <h3 class="text-lg font-semibold mt-4 mb-2 text-accent">Cloud</h3>
+              <h3 class="text-lg font-semibold mt-4 mb-2 text-accent3">Cloud</h3>
               <ul class="list-disc ml-6 text-gray-300">
                 <li>
                   AWS (Lambda, EC2, RDS, S3, ElastiCache), Google Cloud Platform
@@ -139,11 +144,11 @@
               </ul>
             </div>
             <div>
-              <h3 class="text-lg font-semibold mb-2 text-accent">Frontend</h3>
+              <h3 class="text-lg font-semibold mb-2 text-accent3">Frontend</h3>
               <ul class="list-disc ml-6 text-gray-300">
                 <li>React, Vue.js, Next.js, HTML5, CSS/SASS, Tailwind CSS</li>
               </ul>
-              <h3 class="text-lg font-semibold mt-4 mb-2 text-accent">
+              <h3 class="text-lg font-semibold mt-4 mb-2 text-accent3">
                 DevOps & Tools
               </h3>
               <ul class="list-disc ml-6 text-gray-300">
@@ -152,7 +157,7 @@
                   Tuning
                 </li>
               </ul>
-              <h3 class="text-lg font-semibold mt-4 mb-2 text-accent">
+              <h3 class="text-lg font-semibold mt-4 mb-2 text-accent3">
                 Methodologies
               </h3>
               <ul class="list-disc ml-6 text-gray-300">
@@ -166,7 +171,7 @@
         <!-- Experience -->
         <section id="experience" class="mb-24 animate-fade-in-up">
           <div class="section-title mb-8 flex items-center gap-3 font-bold text-3xl">
-            <span class="inline-block h-0.5 w-10 rounded bg-accent"></span>
+            <span class="inline-block h-0.5 w-10 rounded bg-accent2"></span>
             <span class="text-white">Professional Experience</span>
           </div>
           <div class="space-y-12">
@@ -186,7 +191,7 @@
             <!-- Palmetto Solar -->
             <div>
               <h3 class="text-xl font-bold text-accent">
-                Software Engineer
+                Senior Software Engineer
                 <span class="text-gray-400 dark:text-gray-300 font-normal">@ Palmetto Solar</span>
               </h3>
               <div class="text-gray-100 text-sm mb-2">
@@ -253,7 +258,7 @@
         <!-- Achievements -->
         <section id="achievements" class="mb-24 animate-fade-in-up">
           <div class="section-title mb-8 flex items-center gap-3 font-bold text-3xl">
-            <span class="inline-block h-0.5 w-10 rounded bg-accent"></span>
+            <span class="inline-block h-0.5 w-10 rounded bg-accent2"></span>
             <span class="text-white">Key Achievements</span>
           </div>
           <ul class="list-disc ml-6 text-lg text-gray-400 space-y-2">
@@ -283,11 +288,11 @@
         <!-- Contact -->
         <section id="contact" class="mb-24 animate-fade-in-up">
           <div class="section-title mb-8 flex items-center gap-3 font-bold text-3xl">
-            <span class="inline-block h-0.5 w-10 rounded bg-accent"></span>
+            <span class="inline-block h-0.5 w-10 rounded bg-accent2"></span>
             <span class="text-white">Contact</span>
           </div>
           <form
-            action="mailto:brandonfredericksen@gmail.com"
+            action="mailto:brandonfredericksen.alt@gmail.com"
             method="POST"
             enctype="text/plain"
             class="space-y-4 max-w-lg mx-auto"
@@ -330,7 +335,7 @@
             </div>
             <button
               type="submit"
-              class="px-6 py-2 bg-accent text-[#000719] rounded shadow hover:bg-indigo-700 transition focus:outline-none focus:ring-2 focus:ring-accent"
+              class="px-6 py-2 bg-accent3 text-[#000719] rounded shadow hover:bg-indigo-700 transition focus:outline-none focus:ring-2 focus:ring-accent3"
             >
               Send
             </button>
@@ -338,9 +343,9 @@
           <div class="mt-8 text-gray-300 text-center">
             Or email me directly:
             <a
-              href="mailto:brandonfredericksen@gmail.com"
+              href="mailto:brandonfredericksen.alt@gmail.com"
               class="text-accent hover:underline"
-              >brandonfredericksen@gmail.com</a
+              >brandonfredericksen.alt@gmail.com</a
             >
           </div>
         </section>
